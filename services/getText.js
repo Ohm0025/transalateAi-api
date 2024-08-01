@@ -1,7 +1,7 @@
 const { readdirSync, readFileSync } = require("fs");
+const { path_memory } = require("../detail");
 
-const path =
-  "/Users/apple/Documents/project-on-git/api project/textMemApi/memory";
+const path = path_memory;
 
 function getListText() {
   const listFile = readdirSync(path);

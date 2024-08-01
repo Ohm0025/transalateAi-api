@@ -1,10 +1,10 @@
 const { writeFileSync, readdirSync, readFileSync } = require("fs");
 const wordcount = require("word-count");
+const { path_memory } = require("../detail");
 
 let seperate = "---------------------------------------";
 
-const pathDir =
-  "/Users/apple/Documents/project-on-git/api project/textMemApi/memory";
+const pathDir = path_memory;
 
 function writeNewText(text) {
   const readDir = readdirSync(pathDir);
